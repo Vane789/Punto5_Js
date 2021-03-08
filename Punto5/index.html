@@ -1,0 +1,29 @@
+<!--Anlly Vanessa Cardona-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Primo O No</title>
+</head>
+<body>
+	<input type="number"  id="numero" placeholder="Digita">
+	<input type="button" id="validador" value="Validar" onclick="pruebea()">
+	<script type="text/javascript">
+		function pruebea() {
+			let num = document.getElementById('numero').value;
+			let nump = true;
+
+			for (let i = 2; i < num / 2; i++) {
+				if (num % i === 0) {
+					nump = false;
+				} 
+			}
+
+			if (nump) {
+				window.alert("El numero es primo")
+			} else {
+				window.alert("EL  numero no es Primo")
+			}
+		}
+	</script>
+</body>
+</html>
